@@ -17,15 +17,15 @@ import {
 } from "react-icons/fa";
 
 // === IMPORT YOUR IMAGES ===
-import stoneyRoad from "../assets/stoney-road.png";
+import stoneyRoad from "../assets/stoney-road.PNG";
 import jamalMedical from "../assets/jamal-medical.jpg";
-import pakizaFoods from "../assets/pakiza-foods.png";
-import explorationBlog from "../assets/exploration-blog.png";
-import satpk from "../assets/satpk.png";
-import princessHubs from "../assets/princess-hubs.png";
-import sheryWholesale from "../assets/shery-wholesale.png";
-import inventoryVisit from "../assets/inventory-visit.png";
-import gulisCollection from "../assets/gulis-collection.png";
+import pakizaFoods from "../assets/pakiza-foods.PNG";
+import explorationBlog from "../assets/exploration-blog.PNG";
+import satpk from "../assets/satpk.PNG";
+import princessHubs from "../assets/princess-hubs.PNG";
+import sheryWholesale from "../assets/shery-wholesale.PNG";
+import inventoryVisit from "../assets/inventory-visit.PNG";
+import gulisCollection from "../assets/gulis-collection.PNG";
 
 const backgroundIcons = [
   FaLaptopCode,
