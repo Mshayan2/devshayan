@@ -2,10 +2,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import Mehran from "../assets/mehran.jpg";
-import Usama from "../assets/usama.PNG";
-import Uzair from "../assets/uzair.jpg";
-import Farooq from "../assets/farooq.PNG"; // ⭐ NEW
+import Mehran from "../assets/mehran.jpeg";
+import Usama from "../assets/usama.jpg";
+import SM from "../assets/SM.jpeg";
+import Gul from "../assets/Gul.jpeg"; // ⭐ NEW
 
 const floatingShapes = ["circle", "triangle", "pentagon", "star", "hexagon"];
 
@@ -13,7 +13,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: "Mehran Khan",
-      role: "SEO Expert",
+      role: "Wordpress Developer & SEO Expert",
       img: Mehran,
       review:
         "Working with him was an exceptional experience. His ability to deliver high-quality full-stack solutions and optimize websites for maximum performance is remarkable.",
@@ -28,17 +28,17 @@ const Testimonials = () => {
     },
 
     {
-      name: "Uzair Ghalib",
+      name: "S.M Ikhtisham ",
       role: "Web Developer",
-      img: Uzair,
+      img: SM,
       review:
         "A creative and hardworking individual. His command over React, Tailwind and modern UI/UX principles makes him stand out in every project.",
     },
  
     {
-      name: "Farooq Zia Yousafzai",
-      role: "CEO – SAT Digital Uraan",
-      img: Farooq,
+      name: "Gul Nawab",
+      role: "CEO – SAT Software house",
+      img: Gul,
       review:
 "A disciplined, reliable, and highly skilled developer with excellent problem-solving abilities."    },
   ];
