@@ -124,7 +124,7 @@ const Services = () => {
           I'm just a click away! Hire me for your next project.
         </p>
         <a
-          href="#contact"
+          href="https://www.upwork.com/freelancers/~01fb97ac898569e5bd?mp_source=share"
           className="inline-block bg-linear-to-r from-orange-500 to-orange-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300"
         >
           Hire Me
