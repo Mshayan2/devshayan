@@ -17,7 +17,7 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailtoLink = `mailto:devonicsolution1@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:shayan1236y@gmail.com?subject=${encodeURIComponent(
       formData.subject || "Portfolio Contact"
     )}&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
@@ -86,7 +86,6 @@ export default function ContactForm() {
       className="relative w-full min-h-screen py-20 px-6 md:px-20 text-white overflow-hidden"
       style={{ backgroundColor: "#0A2647" }}
     >
-      {/* Background Floating Shapes */}
       {Array.from({ length: 35 }).map((_, i) => {
         const shape = floatingShapes[Math.floor(Math.random() * floatingShapes.length)];
         const size = Math.random() * 36 + 12;
@@ -108,7 +107,6 @@ export default function ContactForm() {
         );
       })}
 
-      {/* Heading */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -118,7 +116,6 @@ export default function ContactForm() {
         Contact <span className="text-[#FF7A00]">Me</span>
       </motion.h2>
 
-      {/* Form */}
       <form
         onSubmit={handleSubmit}
         className="relative z-10 max-w-3xl mx-auto grid gap-6 bg-white/10 backdrop-blur-xl rounded-2xl p-8 shadow-xl"
@@ -165,7 +162,6 @@ export default function ContactForm() {
         </button>
       </form>
 
-      {/* Animation Styles */}
       <style>{`
         @keyframes pulseSlow {
           0%,100% { transform: scale(1); opacity: 0.22; }

@@ -1,51 +1,51 @@
 // src/components/Experience.jsx
 import React from "react";
 import { motion } from "framer-motion";
-import { FaLaptopCode, FaProjectDiagram, FaUserTie, FaPaintBrush } from "react-icons/fa";
+import { FaLaptopCode, FaProjectDiagram, FaChalkboardTeacher, FaUsers } from "react-icons/fa";
 
 const experiences = [
   {
-    role: "Full Stack Developer & Instructor",
-    company: "Sat Software House & Institute",
-    period: "2023 – Present",
+    role: "MERN Stack Developer",
+    company: "SAT Software House",
+    period: "2024 - Present",
     icon: <FaLaptopCode className="text-[#FF7A00]" />,
     details: [
-      "Developed responsive web apps using React & Node.js",
-      "Built APIs & integrated front-end with dynamic back-end",
-      "Delivered training sessions & mentored students",
-    ],
-  },
-  {
-    role: "Full Stack Developer",
-    company: "Freelance Projects",
-    period: "2022 – Present",
-    icon: <FaUserTie className="text-[#FF7A00]" />,
-    details: [
-      "Developed e-commerce platforms with payment integration",
-      "Implemented SEO-friendly structures",
-      "Managed MongoDB & Express server routing",
+      "Developed and deployed 5+ full-stack MERN applications",
+      "Built responsive and optimized user interfaces with React.js",
+      "Designed and integrated REST APIs for dynamic data handling",
     ],
   },
   {
     role: "Project Manager",
-    company: "Sat Software House Swabi",
-    period: "jan-2025 – Present",
+    company: "Pakistan Software Export Board (PSEB)",
+    period: "Internship Program",
     icon: <FaProjectDiagram className="text-[#FF7A00]" />,
     details: [
-      "Managed dev teams for web & mobile projects",
-      "Coordinated timelines, milestones & deliverables",
-      "Ensured code quality & client communication",
+      "Managed and trained a team of 25+ trainees across multiple tech domains",
+      "Led development of startup project HireExpert",
+      "Conducted code reviews, technical sessions, and feedback sessions",
     ],
   },
   {
-    role: "Graphic Designer",
-    company: "Sat Software House Swabi",
-    period: "2023 – Present",
-    icon: <FaPaintBrush className="text-[#FF7A00]" />,
+    role: "MERN Stack Trainer",
+    company: "Training & Mentorship",
+    period: "Ongoing",
+    icon: <FaChalkboardTeacher className="text-[#FF7A00]" />,
     details: [
-      "Designed branding & digital graphics",
-      "Created UI/UX assets for web projects",
-      "Collaborated with dev team for design implementation",
+      "Delivered 10+ MERN Stack training batches",
+      "Designed structured curriculum with practical assignments",
+      "Mentored 50+ students from fundamentals to professional level",
+    ],
+  },
+  {
+    role: "Team Collaboration & Leadership",
+    company: "Cross-Functional Projects",
+    period: "2024 - Present",
+    icon: <FaUsers className="text-[#FF7A00]" />,
+    details: [
+      "Collaborated with cross-functional teams to deliver projects on time",
+      "Improved application performance and cross-browser compatibility",
+      "Created and maintained WordPress sites for clients",
     ],
   },
 ];
@@ -117,13 +117,11 @@ export default function Experience() {
       className="relative py-24 px-6 md:px-20 text-white overflow-hidden"
       style={{ backgroundColor: primaryColor }}
     >
-      {/* Background Glows */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-[500px] h-[500px] bg-[#0A2647] opacity-30 rounded-full blur-3xl animation-pulse-slow -top-40 -left-24" />
         <div className="absolute w-[400px] h-[400px] bg-[#FF7A00] opacity-18 rounded-full blur-3xl animation-pulse-slower -bottom-36 -right-16" />
       </div>
 
-      {/* Floating Shapes */}
       {Array.from({ length: 35 }).map((_, i) => {
         const shape = floatingShapes[Math.floor(Math.random() * floatingShapes.length)];
         const size = Math.random() * 36 + 12;
@@ -145,7 +143,6 @@ export default function Experience() {
         );
       })}
 
-      {/* Heading */}
       <div className="relative z-10 text-center mb-16">
         <h2 className="text-4xl font-bold">
           My <span style={{ color: secondaryColor }}>Experience</span>
@@ -153,7 +150,6 @@ export default function Experience() {
         <p className="text-gray-300 mt-2">Professional journey & achievements</p>
       </div>
 
-      {/* Two-column Cards */}
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6">
         {experiences.map((exp, idx) => {
           const bgGradient =
@@ -189,7 +185,6 @@ export default function Experience() {
         })}
       </div>
 
-      {/* Animation Styles */}
       <style>{`
         @keyframes pulseSlow {
           0%,100% { transform: scale(1); opacity: 0.22; }

@@ -8,10 +8,10 @@ import { Typewriter } from "react-simple-typewriter";
 
 
 const roles = [
-  "Full Stack Developer",
-  "WordPress Expert",
-  "UI/UX Designer",
-  "SEO Handler",
+  "MERN Stack Developer",
+  "React.js Developer",
+  "Node.js & Express.js Developer",
+  "WordPress Developer",
 ];
 
 const Home = () => {
@@ -52,9 +52,9 @@ const Home = () => {
         </div>
 
         <p className="text-white text-base md:text-lg max-w-md mb-6">
-          I specialize in building modern and responsive websites, handling
-          WordPress development, creating intuitive UI/UX designs, and
-          optimizing websites for SEO to grow your business.
+          Results-driven MERN Stack Developer with 2+ years of experience
+          building scalable, high-performance web applications using MongoDB,
+          Express.js, React.js, and Node.js.
         </p>
 
         {/* Buttons */}
@@ -62,7 +62,7 @@ const Home = () => {
          
 
           <a
-            href="/assets/Education M.Shayan CV.pdf" target="_blank" download={"Education M.Shayan CV.pdf"}
+            href="/assets/MUHAMMAD SHAYAN - MERN Stack .pdf" target="_blank" download={"MUHAMMAD SHAYAN - MERN Stack .pdf"}
             className="px-[50px] py-3 rounded-full font-semibold text-white transition-all duration-300 transform hover:-translate-y-1"
             style={{ backgroundColor: secondaryColor }}
           >
@@ -70,7 +70,7 @@ const Home = () => {
           </a>
 
           <a
-            href="https://wa.me/923141707750" target="_blank"
+            href="https://wa.me/923365006551" target="_blank"
             className="px-[70px] py-3 rounded-full font-semibold text-white transition-all duration-300 transform hover:-translate-y-1"
             style={{ backgroundColor: secondaryColor }}
           >
@@ -84,7 +84,7 @@ const Home = () => {
             <AiFillGithub className="text-3xl text-white hover:text-orange" />
           </a>
 
-          <a href="https://www.linkedin.com/in/muhammad-shayan-631973318 " className="w-12 h-12 flex items-center justify-center hover:scale-110 transition">
+          <a href="https://www.linkedin.com/in/muhammad-shayan-631973318/" className="w-12 h-12 flex items-center justify-center hover:scale-110 transition">
             <AiFillLinkedin className="text-3xl text-white hover:text-blue-500" />
           </a>
 
@@ -92,7 +92,7 @@ const Home = () => {
             <AiOutlineMail className="text-3xl text-white hover:text-red-500" />
           </a>
 
-          <a href="https://wa.me/923141707750" target="_blank" className="w-12 h-12 flex items-center justify-center hover:scale-110 transition">
+          <a href="https://wa.me/923365006551" target="_blank" className="w-12 h-12 flex items-center justify-center hover:scale-110 transition">
             <FaWhatsapp className="text-3xl text-white hover:text-green-500" />
           </a>
         </div>

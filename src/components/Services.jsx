@@ -1,30 +1,29 @@
-// src/components/Services.jsx
 import React from "react";
 import { motion } from "framer-motion";
-import { 
-  FaLaptopCode, 
-  FaShoppingCart, 
-  FaShieldAlt, 
-  FaChartLine, 
-  FaPaintBrush, 
-  FaWordpress, 
-  FaPenNib, 
-  FaSearch, 
-  FaPhone, 
-  FaEnvelope, 
-  FaGlobe, 
-  FaCloud 
+import {
+  FaLaptopCode,
+  FaShoppingCart,
+  FaShieldAlt,
+  FaChartLine,
+  FaPaintBrush,
+  FaWordpress,
+  FaPenNib,
+  FaSearch,
+  FaPhone,
+  FaEnvelope,
+  FaGlobe,
+  FaCloud,
 } from "react-icons/fa";
 
 const servicesList = [
-  { name: "Full Stack Development", icon: <FaLaptopCode /> },
-  { name: "E-Commerce Development", icon: <FaShoppingCart /> },
-  { name: "Website Maintenance & Security", icon: <FaShieldAlt /> },
-  { name: "Analytics & Reporting", icon: <FaChartLine /> },
-  { name: "UI/UX Design", icon: <FaPaintBrush /> },
-  { name: "WordPress", icon: <FaWordpress /> },
-  { name: "Branding & Graphic Design", icon: <FaPenNib /> },
-  { name: "SEO & Digital Marketing", icon: <FaSearch /> },
+  { name: "MERN Stack Development", icon: <FaLaptopCode /> },
+  { name: "React Frontend Development", icon: <FaShoppingCart /> },
+  { name: "Backend API Development", icon: <FaShieldAlt /> },
+  { name: "REST API Integration", icon: <FaChartLine /> },
+  { name: "Responsive UI Development", icon: <FaPaintBrush /> },
+  { name: "WordPress Development", icon: <FaWordpress /> },
+  { name: "MongoDB Database Handling", icon: <FaPenNib /> },
+  { name: "Digital Marketing Support", icon: <FaSearch /> },
 ];
 
 const backgroundIcons = [
@@ -43,22 +42,20 @@ const backgroundIcons = [
 ];
 
 const Services = () => {
-  const primaryColor = "#0A2647";   // Navy Blue
-  const secondaryColor = "#FF7A00"; // Vibrant Orange
+  const primaryColor = "#0A2647";
+  const secondaryColor = "#FF7A00";
 
   return (
     <section className="relative min-h-screen px-6 py-16 overflow-hidden" style={{ backgroundColor: primaryColor }}>
-      
-      {/* Subtle Gradient Overlay */}
       <div
         className="absolute w-full h-full top-0 left-0"
         style={{
-          background: "radial-gradient(circle at 40% 40%, rgba(255,122,0,0.05), transparent 80%), radial-gradient(circle at 70% 70%, rgba(255,255,255,0.03), transparent 80%)",
+          background:
+            "radial-gradient(circle at 40% 40%, rgba(255,122,0,0.05), transparent 80%), radial-gradient(circle at 70% 70%, rgba(255,255,255,0.03), transparent 80%)",
           zIndex: 0,
         }}
       />
 
-      {/* Rotating Background Icons */}
       {Array.from({ length: 25 }).map((_, index) => {
         const Icon = backgroundIcons[Math.floor(Math.random() * backgroundIcons.length)];
         return (
@@ -78,17 +75,15 @@ const Services = () => {
         );
       })}
 
-      {/* Heading */}
       <motion.h2
         className="text-4xl md:text-5xl font-bold text-white text-center mb-12 z-10 relative"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        Our <span style={{ color: secondaryColor }}>Services</span>
+        My <span style={{ color: secondaryColor }}>Services</span>
       </motion.h2>
 
-      {/* Services Grid */}
       <motion.div
         className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 z-10 relative"
         initial={{ opacity: 0 }}
@@ -113,7 +108,6 @@ const Services = () => {
         ))}
       </motion.div>
 
-      {/* Call-to-Action */}
       <motion.div
         className="mt-16 text-center z-10 relative"
         initial={{ opacity: 0, y: 20 }}
@@ -124,7 +118,8 @@ const Services = () => {
           I'm just a click away! Hire me for your next project.
         </p>
         <a
-          href="https://www.upwork.com/freelancers/~01fb97ac898569e5bd?mp_source=share" target="_blank"
+          href="https://wa.me/923365006551"
+          target="_blank"
           className="inline-block bg-linear-to-r from-orange-500 to-orange-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300"
         >
           Hire Me

@@ -1,6 +1,7 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
- import Home from "./components/Home";
+import Home from "./components/Home";
 import About from "./components/About";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
@@ -12,35 +13,35 @@ import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import WhatsAppButton from "./components/WhatsAppButton";
+import AllProjectsPage from "./pages/AllProjectsPage";
 
 function App() {
   return (
-    <div className="bg-[#0A0A0C] text-white min-h-screen flex flex-col">
-
-      {/* Navbar */}
-      <Navbar />
-
-      {/* Main Sections */}
-      <main className="flex-1">
-        <section id="home"><Home /></section>
-        <section id="about"><About /></section>
-        <section id="services"><Services /></section>
-        <section id="projects"><Projects /></section>
-        <section id="skills"><Skills /></section>
-        <section id="experience"><Experience /></section>
-        <section id="education"><Education /></section>
-        <section id="testimonials"><Testimonials /></section>
-        <section id="faq"><FAQ /></section>
-        <section id="contact"><Contact /></section>
-      </main>
-
-      {/* WhatsApp Button - floating */}
-      <WhatsAppButton />
-      <Footer />
-              
-
- 
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <div className="bg-[#0A0A0C] text-white min-h-screen flex flex-col">
+            <Navbar />
+            <main className="flex-1">
+              <section id="home"><Home /></section>
+              <section id="about"><About /></section>
+              <section id="services"><Services /></section>
+              <section id="projects"><Projects /></section>
+              <section id="skills"><Skills /></section>
+              <section id="experience"><Experience /></section>
+              <section id="education"><Education /></section>
+              <section id="testimonials"><Testimonials /></section>
+              <section id="faq"><FAQ /></section>
+              <section id="contact"><Contact /></section>
+            </main>
+            <WhatsAppButton />
+            <Footer />
+          </div>
+        }
+      />
+      <Route path="/projects" element={<AllProjectsPage />} />
+    </Routes>
   );
 }
 

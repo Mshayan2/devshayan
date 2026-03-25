@@ -6,8 +6,8 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
-  const whatsappNumber = "+923141707750"; // Your default number
-  const defaultMessage = "Hi! I’d like to discuss a project with you.";
+  const whatsappNumber = "923365006551";
+  const defaultMessage = "Hi! I'd like to discuss a project with you.";
 
   const handleSend = () => {
     const text = encodeURIComponent(document.getElementById("waMessage").value || defaultMessage);
@@ -16,16 +16,13 @@ export default function WhatsAppButton() {
 
   return (
     <>
-      {/* WhatsApp Button */}
       <motion.div
         className="fixed bottom-6 right-6 z-50 flex flex-col items-end"
         animate={{ y: [0, -6, 0] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
       >
-        {/* Online Dot */}
         <span className="absolute top-0 right-0 w-3 h-3 bg-green-500 rounded-full animate-pulse border border-white"></span>
 
-        {/* Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="relative flex items-center justify-center bg-[#25D366] hover:bg-[#1DA851] shadow-lg rounded-full w-14 h-14 text-white text-2xl cursor-pointer"
@@ -33,7 +30,6 @@ export default function WhatsAppButton() {
           <FaWhatsapp />
         </button>
 
-        {/* Tooltip */}
         <motion.span
           initial={{ opacity: 0, x: 10 }}
           whileHover={{ opacity: 1, x: 0 }}
@@ -43,7 +39,6 @@ export default function WhatsAppButton() {
           Contact me on WhatsApp
         </motion.span>
 
-        {/* Chat Box */}
         <AnimatePresence>
           {isOpen && (
             <motion.div

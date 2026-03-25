@@ -75,7 +75,9 @@ const About = () => {
           <span style={{ color: secondaryColor }} className="font-semibold">
             Muhammad Shayan
           </span>
-          , a Full Stack Developer creating modern, responsive, and engaging digital experiences, a WordPress expert, and SEO handler.
+          , a MERN Stack Developer with 2+ years of experience building
+          scalable web applications, RESTful APIs, responsive interfaces, and
+          real-world business platforms while also mentoring development teams.
         </p>
       </motion.div>
 
@@ -87,14 +89,14 @@ const About = () => {
         transition={{ duration: 1.2 }}
       >
         {[
-          "Full Stack Development",
-          "E-Commerce Development",
-          "Website Maintenance & Security",
-          "Analytics & Reporting",
-          "UI/UX Design",
+          "React.js",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "REST APIs",
+          "Tailwind CSS",
           "WordPress",
-          "Branding & Graphic Design",
-          "SEO & Digital Marketing",
+          "Postman",
         ].map((skill, index) => (
           <motion.div
             key={index}

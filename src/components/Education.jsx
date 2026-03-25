@@ -7,28 +7,14 @@ const educations = [
   {
     type: "degree",
     title: "BS in Computer Science",
-    institute: "GDC Lahore Swabi",
-    period: "Final Year",
-    icon: <FaGraduationCap className="text-[#FF7A00]" />,
-  },
-  {
-    type: "degree",
-    title: "FSc (Computer Science)",
-    institute: "Government Postgraduate College, Swabi",
-    period: "",
-    icon: <FaGraduationCap className="text-[#FF7A00]" />,
-  },
-  {
-    type: "degree",
-    title: "Matric (Science)",
-    institute: "Government High School Sheikh Jana",
-    period: "",
+    institute: "University of Swabi",
+    period: "Expected Graduation: 2026",
     icon: <FaGraduationCap className="text-[#FF7A00]" />,
   },
   {
     type: "certification",
-    title: "NAVTTC Certified – Networking",
-    institute: "Cisco, Huawei, IBM",
+    title: "Professional Languages",
+    institute: "English (Professional), Urdu (Native), Pashto",
     period: "",
     icon: <FaCertificate className="text-[#FF7A00]" />,
   },
@@ -101,13 +87,11 @@ export default function Education() {
       className="relative py-24 px-6 md:px-20 text-white overflow-hidden"
       style={{ backgroundColor: primaryColor }}
     >
-      {/* Background Glows */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-[500px] h-[500px] bg-[#0A2647] opacity-30 rounded-full blur-3xl animation-pulse-slow -top-40 -left-24" />
         <div className="absolute w-[400px] h-[400px] bg-[#FF7A00] opacity-18 rounded-full blur-3xl animation-pulse-slower -bottom-36 -right-16" />
       </div>
 
-      {/* Floating Shapes */}
       {Array.from({ length: 30 }).map((_, i) => {
         const shape = floatingShapes[Math.floor(Math.random() * floatingShapes.length)];
         const size = Math.random() * 36 + 12;
@@ -129,15 +113,13 @@ export default function Education() {
         );
       })}
 
-      {/* Heading */}
       <div className="relative z-10 text-center mb-16">
         <h2 className="text-4xl font-bold">
           My <span style={{ color: secondaryColor }}>Education</span>
         </h2>
-        <p className="text-gray-300 mt-2">Academic background & certifications</p>
+        <p className="text-gray-300 mt-2">Academic background and professional profile</p>
       </div>
 
-      {/* Education Tree */}
       <div className="relative z-10 grid md:grid-cols-2 gap-6">
         {educations.map((edu, idx) => {
           const isEven = idx % 2 === 0;
@@ -167,7 +149,6 @@ export default function Education() {
         })}
       </div>
 
-      {/* Animation Styles */}
       <style>{`
         @keyframes pulseSlow {
           0%,100% { transform: scale(1); opacity: 0.22; }
