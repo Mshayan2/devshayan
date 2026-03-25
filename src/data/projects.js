@@ -12,8 +12,15 @@ import princessHubs from "../assets/princess-hubs.PNG";
 import sheryWholesale from "../assets/shery-wholesale.PNG";
 import inventoryVisit from "../assets/inventory-visit.PNG";
 import gulisCollection from "../assets/gulis-collection.PNG";
+import starGym from "../assets/star gym.PNG";
 
 export const projects = [
+  {
+    title: "StarGym",
+    desc: "Responsive gym website with bold fitness branding, class highlights, service sections, pricing, and contact-focused landing flow.",
+    image: starGym,
+    link: "https://stargym.vercel.app/",
+  },
   {
     title: "HireExpert",
     desc: "Startup platform for digital and physical services. Worked as Project Manager and Full Stack Contributor.",
